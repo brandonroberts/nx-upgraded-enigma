@@ -1,0 +1,22 @@
+{
+  "npmScope": "nx-ngrx9",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "myapp": {
+      "tags": []
+    },
+    "myapp-e2e": {
+      "tags": [],
+      "implicitDependencies": ["myapp"]
+    }
+  }
+}
