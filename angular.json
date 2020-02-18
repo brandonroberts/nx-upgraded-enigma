@@ -87,6 +87,16 @@
             "passWithNoTests": true,
             "setupFile": "apps/myapp/src/test-setup.ts"
           }
+        },
+        "test-tools": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              { "command": "nx workspace-schematic --list-schematics > /dev/null" },
+              { "command": "jest -c tools/jest.config.js" }
+            ],
+            "parallel": false
+          }
         }
       }
     },
